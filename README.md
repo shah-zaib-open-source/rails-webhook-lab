@@ -10,6 +10,8 @@ Rails Webhook Lab helps you run a scenario and check the result that matters to 
 
 The [Rails demo](examples/rails_demo/README.md) uses real Rails endpoints and an in-memory database with synthetic events. It shows a naive handler failing on duplicate and reversed deliveries, and a second example passing those particular sequential cases. The demo is illustrative, not production payment code; it does not verify signatures or address concurrent delivery.
 
+The [Stripe demo](examples/stripe_demo/README.md) adds test-signed, synthetic snapshot events checked with the Stripe Ruby SDK, plus a comparison with ordinary Rails tests. It runs locally without Stripe credentials or API requests; it does not model concurrent processing or background jobs.
+
 ## Use in your tests
 
 This project has not yet been published to RubyGems. To try a local checkout, build and install the gem:
