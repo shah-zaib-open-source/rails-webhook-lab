@@ -1,0 +1,2 @@
+*.gem
+/examples/rails_demo/Gemfile.lock
